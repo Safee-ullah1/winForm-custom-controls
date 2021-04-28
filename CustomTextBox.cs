@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Data;
@@ -125,8 +125,8 @@ namespace BasicUserControls
                 this.myTextBox.ForeColor = Color.Silver;
                 this.textUnderlinePanel.Width -= 35;
                 this.textUnderlinePanel.Height -= 1;
-                this.textUnderlinePanel.BackColor = Color.WhiteSmoke;
             }
+            this.textUnderlinePanel.BackColor = Color.WhiteSmoke;
         }
         public string getText()
         {
@@ -138,6 +138,11 @@ namespace BasicUserControls
             {
                 return this.myTextBox.Text;
             }
+            
+        }
+        public void setText(string text)
+        {
+            this.myTextBox.Text = text;
         }
     }
 }
